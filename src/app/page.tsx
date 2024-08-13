@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
+import { TiArrowSortedDown } from "react-icons/ti";
 
 export default function Home() {
   const cards = [
@@ -131,6 +132,61 @@ export default function Home() {
               <MdKeyboardArrowRight className="h-6 w-6 fill-black" />
             </button>
           </div>
+        </div>
+      </div>
+      <div className="relative flex bg-tertiary px-16 h-[54rem] w-full items-center">
+        <Image
+          src="/eclipse.png"
+          alt="eclipse"
+          width={735}
+          height={153}
+          className="absolute top-10 left-10"
+        />
+        <Image
+          src="/entrepreneur.png"
+          alt="entrepreneur"
+          width={576}
+          height={535}
+          className="absolute left-1/2 transform -translate-x-1/2 bottom-0"
+        />
+        <div className="flex flex-col max-w-[42.3125rem]">
+          <h2 className="mb-6 font-bold text-[2.5rem] leading-[3rem]">
+            Save Time and Book Appointments Easily with appointmentnow.eu
+          </h2>
+          <p className="mb-8 font-normal text-lg leading-[1.6875rem]">
+            appointmentnow.eu is the ultimate solution for hassle-free
+            appointment booking. With our reliable service, you can conveniently
+            schedule appointments from various German websites.
+          </p>
+          <div className="flex justify-between">
+            <div className="flex flex-1 flex-col gap-y-4">
+              <p className="font-bold text-xl">Time-saving</p>
+              <p className="font-normal text-base">
+                Say goodbye to long waiting times and easily secure appointments
+                at your earliest convenience.
+              </p>
+            </div>
+            <div className="flex flex-1 flex-col gap-y-4">
+              <p className="font-bold text-xl">Convenience</p>
+              <p className="font-normal text-base">
+                Enjoy the convenience of booking appointments online, anytime
+                and anywhere.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-y-[58px] ml-[210px] xl:ml-[320px]">
+          <button className="flex items-center gap-x-2.5 bg-transparent text-gray-light rounded-2xl py-3 px-6 font-bold text-2xl leading-[2.25rem] ring-4 ring-solid ring-gray-light w-[14.625rem]">
+            services
+            <TiArrowSortedDown className="h-6 w-6 fill-gray-light" />
+          </button>
+          <button className="flex items-center gap-x-2.5 bg-transparent text-gray-light rounded-2xl py-3 px-6 font-bold text-2xl leading-[2.25rem] ring-4 ring-solid ring-gray-light w-[14.625rem]">
+            location
+            <TiArrowSortedDown className="h-6 w-6 fill-gray-light" />
+          </button>
+          <button className="bg-primary text-primary-foreground rounded-2xl py-3 px-6 font-bold text-2xl leading-[2.25rem]">
+            Book Now
+          </button>
         </div>
       </div>
       <footer className="flex bg-white py-20 px-16 w-full flex-col">
