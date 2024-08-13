@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
 
 export default function Home() {
@@ -132,6 +133,17 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <footer className="flex bg-white py-20 px-16 w-full flex-col">
+        <hr className="border-black mb-8 w-full" />
+        <div className="flex justify-between text-black text-sm leading-[1.3125rem]">
+          <p>© 2022 - 2024 Netsh UG. All rights reserved.</p>
+          <div className="flex gap-x-6 underline">
+            <Link href="/">Privacy Policy</Link>
+            <Link href="/">Terms of Service</Link>
+            <Link href="/">Cookies Settings</Link>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
