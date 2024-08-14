@@ -29,12 +29,12 @@ export default function Home() {
     <main className="flex min-h-screen flex-col py-4 bg-white text-black">
       <nav className="flex justify-between items-center w-full px-16 h-[72px] text-gray-light text-base font-semibold">
         <ul className="flex items-center gap-x-8">
-          <li>Contact</li>
-          <li>Services</li>
-          <li className="flex items-center shrink-0 gap-x-1">
+          <Link href="/">Contact</Link>
+          <Link href="/">Services</Link>
+          <Link href="/" className="flex items-center shrink-0 gap-x-1">
             About Us
             <MdKeyboardArrowDown className="h-6 w-6 fill-black" />
-          </li>
+          </Link>
         </ul>
         <button className="bg-primary-light text-white py-2 px-5 rounded-2xl text-base font-bold">
           Book Now
@@ -176,11 +176,11 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col gap-y-[58px] ml-[210px] xl:ml-[320px]">
-          <button className="flex items-center gap-x-2.5 bg-transparent text-gray-light rounded-2xl py-3 px-6 font-bold text-2xl leading-[2.25rem] ring-4 ring-solid ring-gray-light w-[14.625rem]">
+          <button className="flex items-center gap-x-2.5 bg-transparent text-gray-light rounded-2xl py-3 px-6 font-bold text-2xl leading-[2.25rem] ring-4 ring-solid ring-gray-light w-[14.625rem] justify-center">
             services
             <TiArrowSortedDown className="h-6 w-6 fill-gray-light" />
           </button>
-          <button className="flex items-center gap-x-2.5 bg-transparent text-gray-light rounded-2xl py-3 px-6 font-bold text-2xl leading-[2.25rem] ring-4 ring-solid ring-gray-light w-[14.625rem]">
+          <button className="flex items-center gap-x-2.5 bg-transparent text-gray-light rounded-2xl py-3 px-6 font-bold text-2xl leading-[2.25rem] ring-4 ring-solid ring-gray-light w-[14.625rem] justify-center">
             location
             <TiArrowSortedDown className="h-6 w-6 fill-gray-light" />
           </button>
